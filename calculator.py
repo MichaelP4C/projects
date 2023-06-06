@@ -4,20 +4,24 @@ try:
     
     choices = ['/', '*', '-', '+']
     devider = input('What do you want to devide by?: (+, -, *, /) ')
+    
+    show_result = '='
 
     denumenator = int(input('Enter denumenator: '))
-
+    
     if devider == '/':
-          print(numenator/denumenator)
+          result = (numenator/denumenator)
     elif devider == '*':
-          print(numenator*denumenator)
+          result = (numenator*denumenator)
     elif devider == '-':
-          print(numenator-denumenator)
+          result = (numenator-denumenator)
     elif devider == '+':
-          print(numenator+denumenator)
+          result = (numenator+denumenator)
+    print(result)
+      
 
     if devider not in choices:
-          print('Something went wrong!')
+          print('You can only devide by +,-,*,/')
     
 
 except ZeroDivisionError:
